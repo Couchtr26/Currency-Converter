@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        } 
+        select, input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Currency Converter</h2>
+
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <select id="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+    </select>
+
+    <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+    </select>
+
+    <button onclick="convert()">Convert</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+async function convert() {
+    const amount = parseFloat(document.getElementById("amount").value);
+    const fromCurrency = document.getElementById("fromCurrency").value;
+    const toCurrency = document.getElementById("toCurrency").value;
+ 
+    if (isNaN(amount)) {
+        document.getElementById("result").innerText = "Please enter a valid amount.";
+        return;
+    }
+
+    try {
+        // MOCK API response -- you will swap this out for real API
+        const mockRates = {
+            "USD": { "EUR": 0.91, "GBP": 0.79, "JPY": 157.5 },
+            "EUR": { "USD": 1.10, "GBP": 0.87, "JPY": 173.1 },
+            "GBP": { "USD": 1.26, "EUR": 1.15, "JPY": 198.4 }, 
+            "JPY": { "USD": 0.0064, "EUR": 0.0058, "GBP": 0.0050 }
+        };
+
+        let rate;
+        if (fromCurrency === toCurrency) {
+            rate = 1;
+        } else {
+            rate = mockRates[fromCurrency][toCurrency];
+        }
+        const result = (amount * rate).toFixed(2);
+        document.getElementById("result").innerText = `${amount} ${fromCurrency} = ${result} ${toCurrency}`;
+    } catch (error) {
+        document.getElementById("result").innerText = "Error fetching conversion.";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
