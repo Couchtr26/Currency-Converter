@@ -26,3 +26,4 @@ A simple web-based currency converter built using HTML, CSS, and JavaScript.
 ## Author
 
 Thomas (Grey Knight Software)
+Copyright (c) 2025 Couchtr26
