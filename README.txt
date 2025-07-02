@@ -1,7 +1,7 @@
 🌍 Currency-Converter Public
 A clean, responsive, web-based currency converter built with HTML, CSS, and JavaScript.
 
-This lightweight project allows users to convert between global currencies through a simple interface. It can be used as-is for educational purposes or extended with real-time exchange rate APIs for production-level features.
+This lightweight project enables users to convert between global currencies using a simple interface. Designed for both educational and real-world use, it’s easy to extend with live exchange rate APIs for production-ready applications.
 
 ✨ Features
 🔄 Currency-to-currency conversion — input any amount and convert between currencies
@@ -10,11 +10,11 @@ This lightweight project allows users to convert between global currencies throu
 
 💻 Fully client-side — runs in any modern web browser
 
-📱 Responsive UI — clean layout for both desktop and mobile
+📱 Responsive UI — optimized for desktop and mobile
 
-🧩 API-ready — easily extendable to support real-time rates via services like exchangerate.host or Fixer.io
+🧩 API-ready — simple to extend using services like exchangerate.host or Fixer.io
 
-🎨 Minimalist design using HTML5 & CSS3
+🎨 Minimalist design — styled with clean HTML5 & CSS3
 
 🛠 Tech Stack
 HTML5
@@ -28,7 +28,7 @@ JavaScript (Vanilla)
 bash
 Copy
 Edit
-git clone https://github.com/YourUsername/currency-converter-public.git
+git clone https://github.com/Couchtr26/currency-converter-public.git
 cd currency-converter-public
 open index.html
 🧠 Manual Steps
@@ -36,31 +36,31 @@ Open index.html in any modern browser
 
 Select your source and target currencies
 
-Enter the amount to convert
+Enter an amount
 
-Click “Convert” to view the result
+Click Convert to see the result
 
-🔌 Optional: You can integrate a currency API by modifying script.js to fetch real-time exchange rates.
+🔌 Optional: Modify script.js to integrate a currency API and fetch real-time exchange rates.
 
 📈 Extend It
-Want to take it further?
+Want to expand functionality?
 
-Add real-time exchange rate API integration
+🌍 Add real-time exchange rate APIs
 
-Save conversion history with localStorage
+🕓 Save conversion history with localStorage
 
-Add charts or visualizations (e.g., currency trends)
+📊 Add trend charts or visualizations
 
-Translate into other languages for i18n
+🌐 Add language support for international users
 
 🤝 Contributions
-This project is part of a larger portfolio of real-world tools.
-Contributions, feedback, and forks are welcome!
+This project is part of a growing portfolio of real-world tools.
+Feedback, forks, and pull requests are always welcome.
 
 📄 License
-MIT License — free to use, modify, and share.
+MIT License — Free to use, modify, and share.
 
-## Author
-
+👨‍💻 Author
 Thomas (Grey Knight Software)
-Copyright (c) 2025 Couchtr26
+GitHub: @Couchtr26
+© 2025 — All Rights Reserved
