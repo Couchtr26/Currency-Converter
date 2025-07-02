@@ -38,7 +38,7 @@ Select your source and target currencies
 
 Enter an amount
 
-Click Convert to see the result
+Click Convert to view the result
 
 🔌 Optional: Modify script.js to integrate a currency API and fetch real-time exchange rates.
 
@@ -51,16 +51,16 @@ Want to expand functionality?
 
 📊 Add trend charts or visualizations
 
-🌐 Add language support for international users
+🌐 Add multi-language support for international users
 
 🤝 Contributions
 This project is part of a growing portfolio of real-world tools.
-Feedback, forks, and pull requests are always welcome.
+Feedback, forks, and pull requests are always welcome!
 
 📄 License
 MIT License — Free to use, modify, and share.
 
 👨‍💻 Author
-Thomas (Grey Knight Software)
+Thomas — Grey Knight Software
 GitHub: @Couchtr26
 © 2025 — All Rights Reserved
